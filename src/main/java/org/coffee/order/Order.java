@@ -1,13 +1,22 @@
 package org.coffee.order;
 
-/**
- * Hello world!
- *
- */
-public class Order
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class Order {
+
+    private int orderNumber;
+    private String clientName;
+
+    public Order(int orderNumber, String clientName) {
+        this.orderNumber = orderNumber;
+        this.clientName = clientName;
     }
+
+    public int getOrderNumber() {
+        return orderNumber;
+    }
+
+
+    public String getClientName() {
+        return clientName;
+    }
+
 }
